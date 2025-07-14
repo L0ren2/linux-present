@@ -1,0 +1,125 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_THEME: beige
+#+OPTIONS: toc:nil
+#+TITLE: The Penguin
+#+AUTHOR: Lorenz Schwab
+#+EMAIL: lorenz.schwab@heidelberg-instruments.com
+
+#+REVEAL_TITLE_SLIDE: %t <br/>
+#+REVEAL_TITLE_SLIDE: <img style="height: 200px;" src="img/Tux.png"/><br/><br/>
+#+REVEAL_TITLE_SLIDE: %a <br/> %e
+
+* Contents
+  - [[The issue(s)][The issue(s)]]
+    - [[Windows 11 features 1 / 2][Windows 11 features 1 / 2]]
+    - [[Windows 11 features 2 / 2][Windows 11 features 2 / 2]]
+  - [[The Penguin][The Penguin]]
+    - [[Linux][Linux]]
+    - [[Problems solved][Problems solved]]
+    - [[Problems introduced][Problems introduced]]
+#+REVEAL: split
+  - [[Addressing the issues][Addressing the issues]]
+    - [[A linux?][A linux?]]
+    - [[The Kernel][The Kernel]]
+    - [[The Distro][The Distro]]
+    - [[Family tree][Family tree]]
+  - [[Footnotes][Footnotes]]
+
+* The issue(s)
+- Windows 10 EOL in October 2025
+  - Security holes will not be patched
+    - Vulnerable system
+- Obsolescent hardware (no TPM 2.0)
+[[./img/tpm.png]] [fn:1]
+- Windows 11 (still) not a great OS
+
+** Windows 11 features 1 / 2
+| pros                          | cons                            |
+|-------------------------------+---------------------------------|
+| faster & more secure than W10 | hardware constraints (TPM, GPU) |
+| better looks                  | harder to reach settings        |
+| darkmode                      | darkmode not system-wide        |
+| easy to use                   | cumbersome to install software  |
+
+** Windows 11 features 2 / 2
+| pros                 | cons                                      |
+|----------------------+-------------------------------------------|
+| compatibility        | bluescreens                               |
+| updates              | no updates for W10                        |
+| better touch support | anti-features (AI, ads, bloat- & malware) |
+| MS office            | microsoft dependency                      |
+
+* The Penguin
+#+ATTR_HTML: :height 50px
+[[./img/Tux.png]] [fn:2]
+- Linux solves a lot of problems
+- also creates some new ones
+
+** Linux
+| pros                   | cons                  |
+|------------------------+-----------------------|
+| no ads                 | might need emulation  |
+| install stuff manually | incompatible software |
+| free (as in freedom)   | steep learning curve  |
+| secure                 | configure yourself    |
+| the terminal           | the terminal          |
+| customizability        | options paralysis     |
+| hardware compatibility |                       |
+
+** Problems solved
+- hardware obsolescence
+- bluescreens
+- MS anti features
+
+** Problems introduced
+- manual installation
+- manual configuration
+- options paralysis
+- breaking your system
+- steep learning curve (learn how to fix it)
+
+* Addressing the issues
+- install a linux system on your personal hardware
+- get tips for basic configuration
+- get to know a few options
+- the terminal
+
+** Installing a linux
+- distribution (distro)
+- bundle software which mostly works well together
+- different out-of-the-box experiences
+- many different flavours
+- often common ancestors
+
+** The Kernel
+- provides inner workings of the OS:
+  - system functions
+  - file systems
+  - hardware utilization
+  - virtual memory paging
+  - processes & scheduling
+  - and many more
+
+** The Distro
+- sits on top of kernel
+  - Debian
+    - Ubuntu
+      - Mint
+  - OpenSuse
+  - RedHat
+    - Fedora
+  - Arch
+    - Manjaro
+
+** Family tree
+- do not be scared
+#+ATTR_HTML: :heigth 500px
+[[./img/tree.png]] [fn:3]
+- you don't need to know all
+- they are pretty similar anyways
+
+
+* Footnotes
+[fn:1] https://support.microsoft.com/en-us/windows/enable-tpm-2-0-on-your-pc-1fd5a332-360d-4f46-a1e7-ae6b0c90645c
+[fn:2] https://de.wikipedia.org/wiki/Linux#/media/Datei:Tux.svg
+[fn:3] https://distrowatch.com/images/other/distro-family-tree.png

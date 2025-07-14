@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Penguin</title>
+<meta name="author" content="Lorenz Schwab"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">The Penguin <br/>
+<img style="height: 200px;" src="img/Tux.png"/><br/><br/>
+Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lorenz.schwab@heidelberg-instruments.com</a>
+</section>
+<section>
+<section id="slide-orga785948">
+<h2 id="orga785948"><span class="section-number-2">1.</span> Contents</h2>
+<ul>
+<li><a href="#/slide-org54e5beb">The issue(s)</a>
+<ul>
+<li><a href="#/slide-orgfd4f704">Windows 11 features 1 / 2</a></li>
+<li><a href="#/slide-org23ecd7a">Windows 11 features 2 / 2</a></li>
+
+</ul></li>
+<li><a href="#/slide-orgd94e130">The Penguin</a>
+<ul>
+<li><a href="#/slide-orgbf514d4">Linux</a></li>
+<li><a href="#/slide-org338e1c2">Problems solved</a></li>
+<li><a href="#/slide-org7eacfe4">Problems introduced</a></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orga785948-split">
+<ul>
+<li><a href="#/slide-orga91c92b">Addressing the issues</a>
+<ul>
+<li><a href="#/slide-orgc9d95d2">A linux?</a></li>
+<li><a href="#/slide-org4d718d1">The Kernel</a></li>
+<li><a href="#/slide-org3a61488">The Distro</a></li>
+<li><a href="#/slide-org46a891c">Family tree</a></li>
+
+</ul></li>
+<li><a href="#/slide-org117016f">Footnotes</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org54e5beb">
+<h2 id="org54e5beb"><span class="section-number-2">2.</span> The issue(s)</h2>
+<ul>
+<li>Windows 10 EOL in October 2025</li>
+<li>Obsolescent hardware (no TPM 2.0)</li>
+
+</ul>
+<p>
+<img src="./img/tpm.png" alt="tpm.png" /> <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+<ul>
+<li>Windows 11 (still) not a great OS</li>
+
+</ul>
+</section>
+<section id="slide-orgfd4f704">
+<h3 id="orgfd4f704"><span class="section-number-3">2.1.</span> Windows 11 features 1 / 2</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">pros</th>
+<th scope="col" class="org-left">cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">faster &amp; more secure than W10</td>
+<td class="org-left">hardware constraints (TPM, GPU)</td>
+</tr>
+
+<tr>
+<td class="org-left">better looks</td>
+<td class="org-left">harder to reach settings</td>
+</tr>
+
+<tr>
+<td class="org-left">darkmode</td>
+<td class="org-left">darkmode not system-wide</td>
+</tr>
+
+<tr>
+<td class="org-left">easy to use</td>
+<td class="org-left">cumbersome to install software</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-org23ecd7a">
+<h3 id="org23ecd7a"><span class="section-number-3">2.2.</span> Windows 11 features 2 / 2</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">pros</th>
+<th scope="col" class="org-left">cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">compatibility</td>
+<td class="org-left">bluescreens</td>
+</tr>
+
+<tr>
+<td class="org-left">updates</td>
+<td class="org-left">no updates for W10</td>
+</tr>
+
+<tr>
+<td class="org-left">better touch support</td>
+<td class="org-left">anti-features (AI, ads, bloat- &amp; malware)</td>
+</tr>
+
+<tr>
+<td class="org-left">MS office</td>
+<td class="org-left">microsoft dependency</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section id="slide-orgd94e130">
+<h2 id="orgd94e130"><span class="section-number-2">3.</span> The Penguin</h2>
+<p height="50px">
+<img src="./img/Tux.png" alt="Tux.png" height="50px" /> <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+</p>
+<ul>
+<li>Linux solves a lot of problems</li>
+<li>also creates some new ones</li>
+
+</ul>
+</section>
+<section id="slide-orgbf514d4">
+<h3 id="orgbf514d4"><span class="section-number-3">3.1.</span> Linux</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">pros</th>
+<th scope="col" class="org-left">cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">no ads</td>
+<td class="org-left">might need emulation</td>
+</tr>
+
+<tr>
+<td class="org-left">install stuff manually</td>
+<td class="org-left">incompatible software</td>
+</tr>
+
+<tr>
+<td class="org-left">free (as in freedom)</td>
+<td class="org-left">steep learning curve</td>
+</tr>
+
+<tr>
+<td class="org-left">secure</td>
+<td class="org-left">configure yourself</td>
+</tr>
+
+<tr>
+<td class="org-left">the terminal</td>
+<td class="org-left">the terminal</td>
+</tr>
+
+<tr>
+<td class="org-left">customizability</td>
+<td class="org-left">options paralysis</td>
+</tr>
+
+<tr>
+<td class="org-left">hardware compatibility</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-org338e1c2">
+<h3 id="org338e1c2"><span class="section-number-3">3.2.</span> Problems solved</h3>
+<ul>
+<li>hardware obsolescence</li>
+<li>bluescreens</li>
+<li>MS anti features</li>
+
+</ul>
+</section>
+<section id="slide-org7eacfe4">
+<h3 id="org7eacfe4"><span class="section-number-3">3.3.</span> Problems introduced</h3>
+<ul>
+<li>manual installation</li>
+<li>manual configuration</li>
+<li>options paralysis</li>
+<li>breaking your system</li>
+<li>steep learning curve (learn how to fix it)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga91c92b">
+<h2 id="orga91c92b"><span class="section-number-2">4.</span> Addressing the issues</h2>
+<ul>
+<li>install a linux system on your personal hardware</li>
+<li>get tips for basic configuration</li>
+<li>get to know a few options</li>
+<li>the terminal</li>
+
+</ul>
+</section>
+<section id="slide-orgc9d95d2">
+<h3 id="orgc9d95d2"><span class="section-number-3">4.1.</span> A linux?</h3>
+<ul>
+<li>distributions (distro)</li>
+<li>bundle software that mostly work well together</li>
+<li>different out-of-the-box experiences</li>
+<li>many different flavours</li>
+<li>often common ancestors</li>
+
+</ul>
+</section>
+<section id="slide-org4d718d1">
+<h3 id="org4d718d1"><span class="section-number-3">4.2.</span> The Kernel</h3>
+<ul>
+<li>provides inner workings of the OS:
+<ul>
+<li>system functions</li>
+<li>file systems</li>
+<li>hardware utilization</li>
+<li>virtual memory paging</li>
+<li>processes &amp; scheduling</li>
+<li>and many more</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org3a61488">
+<h3 id="org3a61488"><span class="section-number-3">4.3.</span> The Distro</h3>
+<ul>
+<li>sits on top of kernel
+<ul>
+<li>Debian
+<ul>
+<li>Ubuntu
+<ul>
+<li>Mint</li>
+
+</ul></li>
+
+</ul></li>
+<li>OpenSuse</li>
+<li>RedHat
+<ul>
+<li>Fedora</li>
+
+</ul></li>
+<li>Arch
+<ul>
+<li>Manjaro</li>
+
+</ul></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org46a891c">
+<h3 id="org46a891c"><span class="section-number-3">4.4.</span> Family tree</h3>
+<ul>
+<li>do not be scared</li>
+
+</ul>
+<p heigth="500px">
+<img src="./img/tree.png" alt="tree.png" heigth="500px" /> <sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+</p>
+<ul>
+<li>you don't need to know all</li>
+<li>they are pretty similar anyways</li>
+
+</ul>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
