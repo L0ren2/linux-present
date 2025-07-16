@@ -3,13 +3,14 @@
 #+OPTIONS: toc:nil
 #+TITLE: The Penguin
 #+AUTHOR: Lorenz Schwab
-#+EMAIL: lorenz.schwab@heidelberg-instruments.com
+#+EMAIL: lorenz.schwab@blank.de
 
 #+REVEAL_TITLE_SLIDE: %t <br/>
 #+REVEAL_TITLE_SLIDE: <img style="height: 200px;" src="img/Tux.png"/><br/><br/>
 #+REVEAL_TITLE_SLIDE: %a <br/> %e
 
 * Contents
+  - [[Contents][Contents]]
   - [[The issue(s)][The issue(s)]]
     - [[Windows 11 features 1 / 2][Windows 11 features 1 / 2]]
     - [[Windows 11 features 2 / 2][Windows 11 features 2 / 2]]
@@ -19,10 +20,26 @@
     - [[Problems introduced][Problems introduced]]
 #+REVEAL: split
   - [[Addressing the issues][Addressing the issues]]
-    - [[A linux?][A linux?]]
+    - [[Installing a linux][Installing a linux]]
     - [[The Kernel][The Kernel]]
     - [[The Distro][The Distro]]
     - [[Family tree][Family tree]]
+#+REVEAL: split
+  - [[Linux intro][Linux intro]]
+    - [[Multiuser, timesharing system][Multiuser, timesharing system]]
+    - [[Basic terminal usage][Basic terminal usage]]
+    - [[Package management][Package management]]
+    - [[Change username, password, permissions, ownership][Change username, password, permissions, ownership]]
+    - [[Change hostname][Change hostname]]
+#+REVEAL: split
+    - [[Networking][Networking]]
+    - [[Sound setup][Sound setup]]
+    - [[Bluetooth][Bluetooth]]
+    - [[Text editing inside terminal][Text editing inside terminal]]
+    - [[Breaking your system][Breaking your system]]
+    - [[Fixing it][Fixing it]]
+    - [[Getting help][Getting help]]
+    - [[Bonus][Bonus]]
   - [[Footnotes][Footnotes]]
 
 * The issue(s)
@@ -40,6 +57,7 @@
 | better looks                  | harder to reach settings        |
 | darkmode                      | darkmode not system-wide        |
 | easy to use                   | cumbersome to install software  |
+| recall feature is opt in now  | recall is a privacy nightmare   |
 
 ** Windows 11 features 2 / 2
 | pros                 | cons                                      |
@@ -48,6 +66,7 @@
 | updates              | no updates for W10                        |
 | better touch support | anti-features (AI, ads, bloat- & malware) |
 | MS office            | microsoft dependency                      |
+| easy cloud access    | cloud usage is almost mandatory           |
 
 * The Penguin
 #+ATTR_HTML: :height 50px
@@ -101,15 +120,16 @@
   - and many more
 
 ** The Distro
-- sits on top of kernel
-  - Debian
-    - Ubuntu
-      - Mint
-  - OpenSuse
-  - RedHat
-    - Fedora
-  - Arch
-    - Manjaro
+- Debian -> Ubuntu -> Mint
+- Debian -> Ubuntu -> Kubuntu
+
+- OpenSuse
+
+- RedHat (RHEL) -> Alma
+- RedHat (RHEL) -> Fedora
+- RedHat (RHEL) -> CentOS
+
+- Arch -> Manjaro
 
 ** Family tree
 - do not be scared
@@ -118,6 +138,106 @@
 - you don't need to know all
 - they are pretty similar anyways
 
+* Linux intro
+- it's okay not to remember everything
+- it will help though
+- even better: practice, practice, practice
+
+** Multiuser, timesharing system
+- users, groups, permissions
+- unix-like
+
+** Basic terminal usage
+- ~sudo~, ~su~
+- ~cd~, ~ls~, ~cp~, ~mv~, ~cat~, ~head~, ~tail~
+- ~more~, ~less~, ~grep~, ~find~
+- ~pushd~, ~popd~, ~sed~, ~cut~
+- ~bash~, ~awk~, ~python~
+- ~vim~, ~nano~, ~emacs~
+- ~git~, ~gcc~, ~make~, ...
+
+** Package management
+- ~apt install~, ~dpkg -i~
+- ~rpm -i~, ~yum install~, ~dnf install~
+- ~zypper install~
+- ~pacman -S~
+- ...
+
+** Change username, password, permissions, ownership
+- ~usermod~
+- ~passwd~
+- ~chmod~
+- ~chown~
+
+** Change hostname
+edit the following files:
+- ~/etc/hostname~
+- ~/etc/hosts~
+you will need:
+- root privileges
+- text editor
+
+** Networking
+- ~NetworkManager~
+  - ~nmcli~, ~nmtui~
+- ~iwd~
+  - ~iwctl~
+- ~systemd~
+  - ~systemd-networkd~, ~systemd-resolved~
+- ~wpa_supplicant~
+
+** Sound setup
+- alsa
+- pulse audio
+- pipewire
+- jack
+
+** Bluetooth
+- bluez
+- bluetoothctl
+- pulse audio (for headphones)
+
+** Text editing inside terminal
+- ~vi~, ~vim~, ~nvim~
+- ~nano~, ~pico~, ~micro~
+- ~emacs~, ~emacs~, ~emacs~
+honorable mention to:
+- ~cat~, ~sed~, ~ed~, et al
+
+** Breaking your system
+- it's easy
+- delete some important file
+- save file in =/etc/= with typo
+- save file with windows line ending
+- delete =/boot= or =/efi=
+- remove =/etc/fstab=
+- remove french language pack via ~rm -fr /~
+
+** Fixing it
+- it's usually not hard
+- you might learn something
+- learn that some things may take time
+- often involves web search and text files
+- sometimes you need to reinstall
+- you will understand how OS works
+- learn to work alone on issues
+
+** Getting help
+- ask colleagues
+- web search
+- wiki for your specific distro
+- arch wiki
+- forums, stack overflow, stack exchange
+- gentoo wiki
+- IRC
+
+** Bonus
+- If you want to go above and beyond
+- If you want to learn more about linux
+- And if you used linux for about 1 year
+- I recommend to try and install arch linux
+- You should only need wiki, web and forums
+- You will learn a lot
 
 * Footnotes
 [fn:1] https://support.microsoft.com/en-us/windows/enable-tpm-2-0-on-your-pc-1fd5a332-360d-4f46-a1e7-ae6b0c90645c

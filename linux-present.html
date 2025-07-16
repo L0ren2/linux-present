@@ -30,48 +30,87 @@
 <div class="slides">
 <section id="sec-title-slide">The Penguin <br/>
 <img style="height: 200px;" src="img/Tux.png"/><br/><br/>
-Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lorenz.schwab@heidelberg-instruments.com</a>
+Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@blank.de">lorenz.schwab@blank.de</a>
 </section>
 <section>
-<section id="slide-orga785948">
-<h2 id="orga785948"><span class="section-number-2">1.</span> Contents</h2>
+<section id="slide-orgd34e940">
+<h2 id="orgd34e940"><span class="section-number-2">1.</span> Contents</h2>
 <ul>
-<li><a href="#/slide-org54e5beb">The issue(s)</a>
+<li><a href="#/slide-orgd34e940">Contents</a></li>
+<li><a href="#/slide-org7a4497b">The issue(s)</a>
 <ul>
-<li><a href="#/slide-orgfd4f704">Windows 11 features 1 / 2</a></li>
-<li><a href="#/slide-org23ecd7a">Windows 11 features 2 / 2</a></li>
+<li><a href="#/slide-org9fceaad">Windows 11 features 1 / 2</a></li>
+<li><a href="#/slide-org687a8d0">Windows 11 features 2 / 2</a></li>
 
 </ul></li>
-<li><a href="#/slide-orgd94e130">The Penguin</a>
+<li><a href="#/slide-orgca9a3f4">The Penguin</a>
 <ul>
-<li><a href="#/slide-orgbf514d4">Linux</a></li>
-<li><a href="#/slide-org338e1c2">Problems solved</a></li>
-<li><a href="#/slide-org7eacfe4">Problems introduced</a></li>
+<li><a href="#/slide-org5debf5e">Linux</a></li>
+<li><a href="#/slide-org3f76aaa">Problems solved</a></li>
+<li><a href="#/slide-org9ff4982">Problems introduced</a></li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-orga785948-split">
+<section id="slide-orgd34e940-split">
 <ul>
-<li><a href="#/slide-orga91c92b">Addressing the issues</a>
+<li><a href="#/slide-org1bbc4d6">Addressing the issues</a>
 <ul>
-<li><a href="#/slide-orgc9d95d2">A linux?</a></li>
-<li><a href="#/slide-org4d718d1">The Kernel</a></li>
-<li><a href="#/slide-org3a61488">The Distro</a></li>
-<li><a href="#/slide-org46a891c">Family tree</a></li>
+<li><a href="#/slide-org36c8d4f">Installing a linux</a></li>
+<li><a href="#/slide-orgc7d7e40">The Kernel</a></li>
+<li><a href="#/slide-orga4a23b1">The Distro</a></li>
+<li><a href="#/slide-org9ebc3e3">Family tree</a></li>
 
 </ul></li>
-<li><a href="#/slide-org117016f">Footnotes</a></li>
+
+</ul>
+</section>
+<section id="slide-orgd34e940-split">
+<ul>
+<li><a href="#/slide-org3c50a86">Linux intro</a>
+<ul>
+<li><a href="#/slide-orgde70f48">Multiuser, timesharing system</a></li>
+<li><a href="#/slide-org7240dbe">Basic terminal usage</a></li>
+<li><a href="#/slide-org4bbdd13">Package management</a></li>
+<li><a href="#/slide-org469945e">Change username, password, permissions, ownership</a></li>
+<li><a href="#/slide-org67ca8fa">Change hostname</a></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgd34e940-split">
+<ul>
+<li><a href="#/slide-orge93cbe9">Networking</a></li>
+<li><a href="#/slide-org86cb7ce">Sound setup</a></li>
+<li><a href="#/slide-org2039234">Bluetooth</a></li>
+<li><a href="#/slide-org283840b">Text editing inside terminal</a></li>
+<li><a href="#/slide-orgce4e390">Breaking your system</a></li>
+<li><a href="#/slide-org4131557">Fixing it</a></li>
+<li><a href="#/slide-org493b2e0">Getting help</a></li>
+<li><a href="#/slide-org3aa1cad">Bonus</a></li>
+
+</ul>
+<ul>
+<li><a href="#/slide-org742b158">Footnotes</a></li>
 
 </ul>
 </section>
 </section>
 <section>
-<section id="slide-org54e5beb">
-<h2 id="org54e5beb"><span class="section-number-2">2.</span> The issue(s)</h2>
+<section id="slide-org7a4497b">
+<h2 id="org7a4497b"><span class="section-number-2">2.</span> The issue(s)</h2>
 <ul>
-<li>Windows 10 EOL in October 2025</li>
+<li>Windows 10 EOL in October 2025
+<ul>
+<li>Security holes will not be patched
+<ul>
+<li>Vulnerable system</li>
+
+</ul></li>
+
+</ul></li>
 <li>Obsolescent hardware (no TPM 2.0)</li>
 
 </ul>
@@ -83,8 +122,8 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 
 </ul>
 </section>
-<section id="slide-orgfd4f704">
-<h3 id="orgfd4f704"><span class="section-number-3">2.1.</span> Windows 11 features 1 / 2</h3>
+<section id="slide-org9fceaad">
+<h3 id="org9fceaad"><span class="section-number-3">2.1.</span> Windows 11 features 1 / 2</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -119,11 +158,16 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 <td class="org-left">easy to use</td>
 <td class="org-left">cumbersome to install software</td>
 </tr>
+
+<tr>
+<td class="org-left">recall feature is opt in now</td>
+<td class="org-left">recall is a privacy nightmare</td>
+</tr>
 </tbody>
 </table>
 </section>
-<section id="slide-org23ecd7a">
-<h3 id="org23ecd7a"><span class="section-number-3">2.2.</span> Windows 11 features 2 / 2</h3>
+<section id="slide-org687a8d0">
+<h3 id="org687a8d0"><span class="section-number-3">2.2.</span> Windows 11 features 2 / 2</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -158,13 +202,18 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 <td class="org-left">MS office</td>
 <td class="org-left">microsoft dependency</td>
 </tr>
+
+<tr>
+<td class="org-left">easy cloud access</td>
+<td class="org-left">cloud usage is almost mandatory</td>
+</tr>
 </tbody>
 </table>
 </section>
 </section>
 <section>
-<section id="slide-orgd94e130">
-<h2 id="orgd94e130"><span class="section-number-2">3.</span> The Penguin</h2>
+<section id="slide-orgca9a3f4">
+<h2 id="orgca9a3f4"><span class="section-number-2">3.</span> The Penguin</h2>
 <p height="50px">
 <img src="./img/Tux.png" alt="Tux.png" height="50px" /> <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
 </p>
@@ -174,8 +223,8 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 
 </ul>
 </section>
-<section id="slide-orgbf514d4">
-<h3 id="orgbf514d4"><span class="section-number-3">3.1.</span> Linux</h3>
+<section id="slide-org5debf5e">
+<h3 id="org5debf5e"><span class="section-number-3">3.1.</span> Linux</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -228,8 +277,8 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 </tbody>
 </table>
 </section>
-<section id="slide-org338e1c2">
-<h3 id="org338e1c2"><span class="section-number-3">3.2.</span> Problems solved</h3>
+<section id="slide-org3f76aaa">
+<h3 id="org3f76aaa"><span class="section-number-3">3.2.</span> Problems solved</h3>
 <ul>
 <li>hardware obsolescence</li>
 <li>bluescreens</li>
@@ -237,8 +286,8 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 
 </ul>
 </section>
-<section id="slide-org7eacfe4">
-<h3 id="org7eacfe4"><span class="section-number-3">3.3.</span> Problems introduced</h3>
+<section id="slide-org9ff4982">
+<h3 id="org9ff4982"><span class="section-number-3">3.3.</span> Problems introduced</h3>
 <ul>
 <li>manual installation</li>
 <li>manual configuration</li>
@@ -250,8 +299,8 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 </section>
 </section>
 <section>
-<section id="slide-orga91c92b">
-<h2 id="orga91c92b"><span class="section-number-2">4.</span> Addressing the issues</h2>
+<section id="slide-org1bbc4d6">
+<h2 id="org1bbc4d6"><span class="section-number-2">4.</span> Addressing the issues</h2>
 <ul>
 <li>install a linux system on your personal hardware</li>
 <li>get tips for basic configuration</li>
@@ -260,19 +309,19 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 
 </ul>
 </section>
-<section id="slide-orgc9d95d2">
-<h3 id="orgc9d95d2"><span class="section-number-3">4.1.</span> A linux?</h3>
+<section id="slide-org36c8d4f">
+<h3 id="org36c8d4f"><span class="section-number-3">4.1.</span> Installing a linux</h3>
 <ul>
-<li>distributions (distro)</li>
-<li>bundle software that mostly work well together</li>
+<li>distribution (distro)</li>
+<li>bundle software which mostly works well together</li>
 <li>different out-of-the-box experiences</li>
 <li>many different flavours</li>
 <li>often common ancestors</li>
 
 </ul>
 </section>
-<section id="slide-org4d718d1">
-<h3 id="org4d718d1"><span class="section-number-3">4.2.</span> The Kernel</h3>
+<section id="slide-orgc7d7e40">
+<h3 id="orgc7d7e40"><span class="section-number-3">4.2.</span> The Kernel</h3>
 <ul>
 <li>provides inner workings of the OS:
 <ul>
@@ -287,38 +336,24 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 
 </ul>
 </section>
-<section id="slide-org3a61488">
-<h3 id="org3a61488"><span class="section-number-3">4.3.</span> The Distro</h3>
+<section id="slide-orga4a23b1">
+<h3 id="orga4a23b1"><span class="section-number-3">4.3.</span> The Distro</h3>
 <ul>
-<li>sits on top of kernel
-<ul>
-<li>Debian
-<ul>
-<li>Ubuntu
-<ul>
-<li>Mint</li>
+<li>Debian -&gt; Ubuntu -&gt; Mint</li>
+<li>Debian -&gt; Ubuntu -&gt; Kubuntu</li>
 
-</ul></li>
-
-</ul></li>
 <li>OpenSuse</li>
-<li>RedHat
-<ul>
-<li>Fedora</li>
 
-</ul></li>
-<li>Arch
-<ul>
-<li>Manjaro</li>
+<li>RedHat (RHEL) -&gt; Alma</li>
+<li>RedHat (RHEL) -&gt; Fedora</li>
+<li>RedHat (RHEL) -&gt; CentOS</li>
 
-</ul></li>
-
-</ul></li>
+<li>Arch -&gt; Manjaro</li>
 
 </ul>
 </section>
-<section id="slide-org46a891c">
-<h3 id="org46a891c"><span class="section-number-3">4.4.</span> Family tree</h3>
+<section id="slide-org9ebc3e3">
+<h3 id="org9ebc3e3"><span class="section-number-3">4.4.</span> Family tree</h3>
 <ul>
 <li>do not be scared</li>
 
@@ -329,6 +364,186 @@ Lorenz Schwab <br/> <a href="mailto:lorenz.schwab@heidelberg-instruments.com">lo
 <ul>
 <li>you don't need to know all</li>
 <li>they are pretty similar anyways</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org3c50a86">
+<h2 id="org3c50a86"><span class="section-number-2">5.</span> Linux intro</h2>
+<ul>
+<li>it's okay not to remember everything</li>
+<li>it will help though</li>
+<li>even better: practice, practice, practice</li>
+
+</ul>
+</section>
+<section id="slide-orgde70f48">
+<h3 id="orgde70f48"><span class="section-number-3">5.1.</span> Multiuser, timesharing system</h3>
+<ul>
+<li>users, groups, permissions</li>
+<li>unix-like</li>
+
+</ul>
+</section>
+<section id="slide-org7240dbe">
+<h3 id="org7240dbe"><span class="section-number-3">5.2.</span> Basic terminal usage</h3>
+<ul>
+<li><code>sudo</code>, <code>su</code></li>
+<li><code>cd</code>, <code>ls</code>, <code>cp</code>, <code>mv</code>, <code>cat</code>, <code>head</code>, <code>tail</code></li>
+<li><code>more</code>, <code>less</code>, <code>grep</code>, <code>find</code></li>
+<li><code>pushd</code>, <code>popd</code>, <code>sed</code>, <code>cut</code></li>
+<li><code>bash</code>, <code>awk</code>, <code>python</code></li>
+<li><code>vim</code>, <code>nano</code>, <code>emacs</code></li>
+<li><code>git</code>, <code>gcc</code>, <code>make</code>, &#x2026;</li>
+
+</ul>
+</section>
+<section id="slide-org4bbdd13">
+<h3 id="org4bbdd13"><span class="section-number-3">5.3.</span> Package management</h3>
+<ul>
+<li><code>apt install</code>, <code>dpkg -i</code></li>
+<li><code>rpm -i</code>, <code>yum install</code>, <code>dnf install</code></li>
+<li><code>zypper install</code></li>
+<li><code>pacman -S</code></li>
+<li>&#x2026;</li>
+
+</ul>
+</section>
+<section id="slide-org469945e">
+<h3 id="org469945e"><span class="section-number-3">5.4.</span> Change username, password, permissions, ownership</h3>
+<ul>
+<li><code>usermod</code></li>
+<li><code>passwd</code></li>
+<li><code>chmod</code></li>
+<li><code>chown</code></li>
+
+</ul>
+</section>
+<section id="slide-org67ca8fa">
+<h3 id="org67ca8fa"><span class="section-number-3">5.5.</span> Change hostname</h3>
+<p>
+edit the following files:
+</p>
+<ul>
+<li><code>/etc/hostname</code></li>
+<li><code>/etc/hosts</code></li>
+
+</ul>
+<p>
+you will need:
+</p>
+<ul>
+<li>root privileges</li>
+<li>text editor</li>
+
+</ul>
+</section>
+<section id="slide-orge93cbe9">
+<h3 id="orge93cbe9"><span class="section-number-3">5.6.</span> Networking</h3>
+<ul>
+<li><code>NetworkManager</code>
+<ul>
+<li><code>nmcli</code>, <code>nmtui</code></li>
+
+</ul></li>
+<li><code>iwd</code>
+<ul>
+<li><code>iwctl</code></li>
+
+</ul></li>
+<li><code>systemd</code>
+<ul>
+<li><code>systemd-networkd</code>, <code>systemd-resolved</code></li>
+
+</ul></li>
+<li><code>wpa_supplicant</code></li>
+
+</ul>
+</section>
+<section id="slide-org86cb7ce">
+<h3 id="org86cb7ce"><span class="section-number-3">5.7.</span> Sound setup</h3>
+<ul>
+<li>alsa</li>
+<li>pulse audio</li>
+<li>pipewire</li>
+<li>jack</li>
+
+</ul>
+</section>
+<section id="slide-org2039234">
+<h3 id="org2039234"><span class="section-number-3">5.8.</span> Bluetooth</h3>
+<ul>
+<li>bluez</li>
+<li>bluetoothctl</li>
+<li>pulse audio (for headphones)</li>
+
+</ul>
+</section>
+<section id="slide-org283840b">
+<h3 id="org283840b"><span class="section-number-3">5.9.</span> Text editing inside terminal</h3>
+<ul>
+<li><code>vi</code>, <code>vim</code>, <code>nvim</code></li>
+<li><code>nano</code>, <code>pico</code>, <code>micro</code></li>
+<li><code>emacs</code>, <code>emacs</code>, <code>emacs</code></li>
+
+</ul>
+<p>
+honorable mention to:
+</p>
+<ul>
+<li><code>cat</code>, <code>sed</code>, <code>ed</code>, et al</li>
+
+</ul>
+</section>
+<section id="slide-orgce4e390">
+<h3 id="orgce4e390"><span class="section-number-3">5.10.</span> Breaking your system</h3>
+<ul>
+<li>it's easy</li>
+<li>delete some important file</li>
+<li>save file in <code>/etc/</code> with typo</li>
+<li>save file with windows line ending</li>
+<li>delete <code>/boot</code> or <code>/efi</code></li>
+<li>remove <code>/etc/fstab</code></li>
+<li>remove french language pack via <code>rm -fr /</code></li>
+
+</ul>
+</section>
+<section id="slide-org4131557">
+<h3 id="org4131557"><span class="section-number-3">5.11.</span> Fixing it</h3>
+<ul>
+<li>it's usually not hard</li>
+<li>you might learn something</li>
+<li>learn that some things may take time</li>
+<li>often involves web search and text files</li>
+<li>sometimes you need to reinstall</li>
+<li>you will understand how OS works</li>
+<li>learn to work alone on issues</li>
+
+</ul>
+</section>
+<section id="slide-org493b2e0">
+<h3 id="org493b2e0"><span class="section-number-3">5.12.</span> Getting help</h3>
+<ul>
+<li>ask colleagues</li>
+<li>web search</li>
+<li>wiki for your specific distro</li>
+<li>arch wiki</li>
+<li>forums, stack overflow, stack exchange</li>
+<li>gentoo wiki</li>
+<li>IRC</li>
+
+</ul>
+</section>
+<section id="slide-org3aa1cad">
+<h3 id="org3aa1cad"><span class="section-number-3">5.13.</span> Bonus</h3>
+<ul>
+<li>If you want to go above and beyond</li>
+<li>If you want to learn more about linux</li>
+<li>And if you used linux for about 1 year</li>
+<li>I recommend to try and install arch linux</li>
+<li>You should only need wiki, web and forums</li>
+<li>You will learn a lot</li>
 
 </ul>
 </div>
