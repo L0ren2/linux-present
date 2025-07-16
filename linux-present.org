@@ -131,6 +131,8 @@
 
 - Arch -> Manjaro
 
+- https://distrochooser.de/de
+
 ** Family tree
 - do not be scared
 #+ATTR_HTML: :heigth 500px
